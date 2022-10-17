@@ -1,4 +1,4 @@
-package com.gmind.gmindapp;
+package com.gmind.gmindapp.ui.intro;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -13,6 +13,10 @@
     <color name="orange_one">#e65252</color>
     <color name="orange_two">#e65252</color>
     <color name="orange_three">#e65252</color>
+    <color name="off_white">#F5F5F5</color>
+    <color name="dark_gray">#5A5950</color>
+    <color name="dark_blue">#2B42FF</color>
+    <color name="baby_blue">#2BFFDB</color>
     <array name="active">
         <item>@color/white</item>
         <item>@color/white</item>

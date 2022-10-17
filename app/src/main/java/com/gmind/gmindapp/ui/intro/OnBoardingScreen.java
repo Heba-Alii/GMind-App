@@ -1,4 +1,4 @@
-package com.gmind.gmindapp;
+package com.gmind.gmindapp.ui.intro;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.gmind.gmindapp.R;
 
 //import com.gmind.gmindapp.databinding.ActivityOnBoardingScreenBinding;
 
