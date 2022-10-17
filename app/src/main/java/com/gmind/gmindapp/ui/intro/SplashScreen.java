@@ -10,6 +10,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.gmind.gmindapp.R;
 import com.gmind.gmindapp.databinding.ActivitySplashScreenBinding;
@@ -18,7 +20,9 @@ import com.gmind.gmindapp.ui.intro.OnBoardingScreen;
 public class SplashScreen extends AppCompatActivity {
     //Variables
     private ActivitySplashScreenBinding binding;
-    Animation tobAnima , bottomAnim;
+    Animation tobAnima, bottomAnim;
+    ImageView logo;
+    TextView gMind;
     Handler handler = new Handler();
 
     @Override
@@ -31,9 +35,14 @@ public class SplashScreen extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(view);
         //Animations
-        tobAnima= AnimationUtils.loadAnimation(this,R.anim.top_animation);
-        bottomAnim=AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
+        tobAnima = AnimationUtils.loadAnimation(this, R.anim.top_animation);
+        bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
+//Hooks
+        logo=findViewById(R.id.logo);
+        gMind=findViewById(R.id.gMindTxt);
 
+        logo.setAnimation(tobAnima);
+        gMind.setAnimation(bottomAnim);
 
         Runnable runnable = new Runnable() {
             @Override
